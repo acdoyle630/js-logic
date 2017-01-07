@@ -70,20 +70,32 @@ console.log (loginAttempt);
  * The function will return true if the first number is greater than the second.
  * Console.log your result.
 */
-
-
+function isGreaterThan (first, second){
+  if ( first > second ){
+    return true;
+  } else {
+    return false;
+  }
+}
+var greaterThan = isGreaterThan(10, 2);
+console.log (greaterThan);
 /*
  * #4
  * Function - mustBeTrue
  * Create a function named `mustBeTrue` which will take a parameter: `boo`.
- *
  *  @param Datatype: Boolean `boo`
  *  @return Datatype: Boolean
  *
  * The function will return true if the value passed into the function is "true".
  * Console.log your result.
 */
-
+function mustBeTrue (boo) {
+  if (boo ==='boo') {
+    return true;
+  }
+}
+var ghost = mustBeTrue ('boo');
+console.log (ghost);
 
 /*
  * #5
@@ -96,7 +108,12 @@ console.log (loginAttempt);
  * The function will return the message "Word to Big Bird!", if the string passed into the function is a three-letter word. 
  * Console.log your result.
 */
-
+function bigBird (str) {
+  if (str.length === 3) {
+    return "Word to The Bird";
+  }
+}
+console.log (bigBird('yes'));
 
 /*
  * #6
@@ -110,8 +127,14 @@ console.log (loginAttempt);
  * If the strings are equal, the function will return the message "You look mahvelous!" Otherwise, return the message: "I don't know who you are anymore." 
  * Console.log your result.
 */
-
-
+function isEqual (first, second) {
+  if (first.length === second.length) {
+    return "YOu look mahvelous!";
+  } else {
+    return  "I don't know who you are anymore";
+  }
+}
+console.log (isEqual('faat', 'cat'));
 /*
  * #7
  * Function - notEqual
