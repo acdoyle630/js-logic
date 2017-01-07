@@ -168,7 +168,15 @@ console.log (isEqual('faat', 'cat'));
  * The function will return true if the number passed into the function is greater than 100, otherwise it will return false.
  * Console.log your result.
 */ 
-
+function spareChange ( money ){
+  if (money >100) {
+    return true;
+  } else {
+    return false;
+  }
+}
+var enoughMoney = spareChange(99);
+console.log (enoughMoney);
 
 /*
  * #9
@@ -183,7 +191,14 @@ console.log (isEqual('faat', 'cat'));
  * The function will return true if the sum of all the number values is greater than 30, otherwise it will return false.
  * Console.log your result.
 */ 
-
+function dirty30( num1, num2, num3) {
+  if (num1 + num2 + num3 > 30) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log (dirty30(1,2,3));
 
 /*
  * #10
@@ -196,7 +211,6 @@ console.log (isEqual('faat', 'cat'));
  * The function will return true if the number passed in is an even integer, otherwise it will return false.
  * Console.log your result.
 */ 
-
 
 /*
  * #11
