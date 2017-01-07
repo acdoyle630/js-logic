@@ -233,13 +233,13 @@ console.log (evenOrOdd);
  * Console.log your result.
 */ 
  function daClub (cover, age) {
-  if (cover === true && age >= 21 ) {
+  if (cover >= 21 && age >= 21 ) {
     return "welcome to the legends lounge.";
   } else {
     return "Chuck E Cheese is across the street.";
   }
  }
-console.log(daClub (true, 34));
+console.log(daClub (19, 34));
 /*
  * #12
  * Function - graduation
@@ -253,7 +253,15 @@ console.log(daClub (true, 34));
  * Console.log your result.
 */ 
 
-
+function graduation (credits, thesis) {
+  if (credits >= 120 || thesis === true) {
+    return  "Congratulations on a job well done.";
+  } else {
+    return 'see you in summer school.';
+  }
+}
+var didGraduate = graduation (119, false);
+console.log (didGraduate);
 /*
  * #13
  * Function - moneyTrain
