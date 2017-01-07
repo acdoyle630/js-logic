@@ -232,8 +232,14 @@ console.log (evenOrOdd);
  * If BOTH values are 21 or over, the function will return the message: "Welcome to the Legends Lounge." Otherwise, it will return the message: "Chuck E Cheese is across the street."
  * Console.log your result.
 */ 
-
-
+ function daClub (cover, age) {
+  if (cover === true && age >= 21 ) {
+    return "welcome to the legends lounge.";
+  } else {
+    return "Chuck E Cheese is across the street.";
+  }
+ }
+console.log(daClub (true, 34));
 /*
  * #12
  * Function - graduation
