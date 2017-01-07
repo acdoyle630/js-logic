@@ -211,7 +211,15 @@ console.log (dirty30(1,2,3));
  * The function will return true if the number passed in is an even integer, otherwise it will return false.
  * Console.log your result.
 */ 
-
+function evenStevens (num) {
+  if (num % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+var evenOrOdd = evenStevens( 13 );
+console.log (evenOrOdd);
 /*
  * #11
  * Function - daClub
