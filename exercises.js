@@ -296,8 +296,15 @@ console.log (moneyTrain (200));
  * Invoke your function again.
  * Console.log budget and doughnutBought again.
 */ 
-
-
+ function buyDoughnut ( num ) {
+  var budget = 100;
+  var price = 5;
+  var bought = 0;
+  budget = budget - price * (bought + num);
+    bought = num + bought; 
+  return  bought  + ' and ' + budget ;
+ }
+console.log ( buyDoughnut(2));
 /*
 For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
 
@@ -325,13 +332,18 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 5"
 */
 
-
+var players = ['michael Jorday', 'Scottie Pippen', 'Dennis Rodman', 'Steve Kerr', 'Luc Longley'];
+for (var i =0; i<5; i++) {
+  console.log ('bulls ' + players [i]);
+}
 /* 
  * #16
  * Create a for loop that will iterate and console.log each item in the array below:
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
-
+for (var i=0; i<7; i++) {
+  console.log (myFavFoods [i]);
+}
 
 /*
  * #17
@@ -348,7 +360,6 @@ for (var i = 0; i<toyotaModels.length; i++){
  * Console.log your result.
 */
 
-
 /*
  * #18
  * Function - allStars
@@ -364,6 +375,7 @@ for (var i = 0; i<toyotaModels.length; i++){
   var players = ["LeBron", "Linsanity", "Kawhi", "Kobe", "Yao Ming", "Bird", "Jordan"];
   var east = [];
   var west = [];
+
 
 /*
  * #19
@@ -392,7 +404,7 @@ Final Boss
  *  The function will loop through the string value and put all the letters into an array, except for the letter "A" and "a". We don't want no stinking "A" or "a" in our array. Test your function with the `phrase` below!
 */
 
-  var phrase = "An apple a day keeps Alice feeling awesome!"
+  var phrase = "An apple a day keeps Alice feeling awesome!";
   
 
 
