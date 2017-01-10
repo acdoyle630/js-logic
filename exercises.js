@@ -32,9 +32,7 @@ if(today === "Friday"){
 function canVote (age) {
   if (age >= 18){
     return true;
-  } else {
-    return false;
-  }
+  } 
 }
 console.log(canVote(18));
 
@@ -301,8 +299,15 @@ console.log (moneyTrain (200));
   var bought = 0;
 
 function buyDoughnut () {
-  
+  if (budget >= price) {
+    budget -= price;
+    bought ++;
+  }
 }
+buyDoughnut ();
+console.log (budget);
+buyDoughnut ();
+console.log (budget);
 
 //needs work 
 //needs work
@@ -417,12 +422,12 @@ console.log(sum);
 function subways (special) {
   for (var i=0; i<special.length; i++) {
     if (i % 2 === 1) {
-       special[i]='tuna';
+      special [i] = 'tuna';
     }
   } return special;
 }
-console.log (subways(subOfTheDay));
 
+console.log (subways(subOfTheDay));
 /*
 Final Boss
  * #20
