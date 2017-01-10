@@ -32,7 +32,9 @@ if(today === "Friday"){
 function canVote (age) {
   if (age >= 18){
     return true;
-  } 
+  } else {
+    return false;
+  }
 }
 console.log(canVote(18));
 
@@ -88,11 +90,11 @@ console.log (greaterThan);
  * Console.log your result.
 */
 function mustBeTrue (boo) {
-  if (boo ==='boo') {
+  if (boo ==='true') {
     return true;
   }
 }
-var ghost = mustBeTrue ('boo');
+var ghost = mustBeTrue ('true');
 console.log (ghost);
 
 /*
@@ -126,13 +128,13 @@ console.log (bigBird('yes'));
  * Console.log your result.
 */
 function isEqual (first, second) {
-  if (first.length === second.length) {
-    return "YOu look mahvelous!";
+  if (first === second) {
+    return "You look mahvelous!";
   } else {
     return  "I don't know who you are anymore";
   }
 }
-console.log (isEqual('faat', 'cat'));
+console.log (isEqual('cat', 'cat'));
 /*
  * #7
  * Function - notEqual
@@ -305,7 +307,7 @@ function buyDoughnut () {
   }
 }
 buyDoughnut ();
-console.log (budget);
+console.log ('budget= ' + budget + ' bought= ' + bought );
 buyDoughnut ();
 console.log (budget);
 
@@ -349,7 +351,7 @@ for (var i =0; i<5; i++) {
  * Create a for loop that will iterate and console.log each item in the array below:
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
-for (var i=0; i<7; i++) {
+for (var i=0; i<myFavFoods.length; i++) {
   console.log (myFavFoods [i]);
 }
 
@@ -367,13 +369,16 @@ for (var i=0; i<7; i++) {
  * The function will loop through and add up all the values in the array that is passed into the function and return the total.
  * Console.log your result.
 */
-var sum = [1, 2, 3, 8, 4].reduce (add, 0);
-
-function add(a, b) {
-    return a + b;
+var numArray = [3, 5, 7, 9, 11];
+var total = 0;
+function sumItUp(arr) {
+  for (var i=0; i<arr.length; i++ ) {
+    total += arr[i];
+  }
+  return total;
 }
+console.log(sumItUp (numArray ));
 
-console.log(sum); 
 /*
  * #18
  * Function - allStars
