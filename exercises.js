@@ -5,7 +5,7 @@ var today = new Date();
 
 if(today === "Friday"){
   console.log("Let's Party!");
-};
+}
 
 /*
 If/else statements = Evaluates (or checks) a condition. If the condition is true, the first code block is executed. If the condition is false, the second code block is executed instead.
@@ -15,7 +15,7 @@ if(today === "Friday"){
   console.log("Let's Party!");
 }else{
   console.log("Get back to coding!");
-};
+}
 
 
 /*
@@ -296,15 +296,18 @@ console.log (moneyTrain (200));
  * Invoke your function again.
  * Console.log budget and doughnutBought again.
 */ 
- function buyDoughnut ( num ) {
   var budget = 100;
   var price = 5;
   var bought = 0;
-  budget = budget - price * (bought + num);
-    bought = num + bought; 
-  return  bought  + ' and ' + budget ;
- }
-console.log ( buyDoughnut(2));
+
+function buyDoughnut () {
+  
+}
+
+//needs work 
+//needs work
+
+
 /*
 For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
 
@@ -359,7 +362,13 @@ for (var i=0; i<7; i++) {
  * The function will loop through and add up all the values in the array that is passed into the function and return the total.
  * Console.log your result.
 */
+var sum = [1, 2, 3, 8, 4].reduce (add, 0);
 
+function add(a, b) {
+    return a + b;
+}
+
+console.log(sum); 
 /*
  * #18
  * Function - allStars
@@ -375,9 +384,23 @@ for (var i=0; i<7; i++) {
   var players = ["LeBron", "Linsanity", "Kawhi", "Kobe", "Yao Ming", "Bird", "Jordan"];
   var east = [];
   var west = [];
-
-
+  
+  function allStars (ballers) {
+  for ( var i=0; i<7; i++ ) {
+    if (i % 2 === 0 ) {
+      east.push ( ballers [i]);
+    } else {
+      west.push ( ballers [i]);
+    } 
+  }
+  }
+  
+  allStars (players);
+  console.log (east);
+  console.log (west);
+ 
 /*
+
  * #19
  * Function - subways
  * Create a function named `subways` which takes a parameter: `special`.
@@ -389,8 +412,16 @@ for (var i=0; i<7; i++) {
  * Console.log your results.
 */ 
 
-  var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
+ var subOfTheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
 
+function subways (special) {
+  for (var i=0; i<special.length; i++) {
+    if (i % 2 === 1) {
+       special[i]='tuna';
+    }
+  } return special;
+}
+console.log (subways(subOfTheDay));
 
 /*
 Final Boss
