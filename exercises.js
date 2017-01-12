@@ -377,6 +377,7 @@ function sumItUp(arr) {
   }
   return total;
 }
+sumItUp(numArray);
 console.log(sumItUp (numArray ));
 
 /*
@@ -396,7 +397,7 @@ console.log(sumItUp (numArray ));
   var west = [];
   
   function allStars (ballers) {
-  for ( var i=0; i<7; i++ ) {
+  for ( var i=0; i<ballers.length; i++ ) {
     if (i % 2 === 0 ) {
       east.push ( ballers [i]);
     } else {
@@ -447,7 +448,17 @@ Final Boss
 
   var phrase = "An apple a day keeps Alice feeling awesome!";
   
-
+ var phrase = "An apple a day keeps Alice feeling awesome!";
+  
+function removeLetter (str) {
+  var noA = [ ];
+  for (var i=0; i<str.length; i++) {
+     if (!(str.charAt(i) === "a" || str.charAt(i) === "A")) {
+     noA.push (str.charAt (i)); 
+   }
+  } return noA;
+}
+console.log (removeLetter (phrase));
 
 
 
